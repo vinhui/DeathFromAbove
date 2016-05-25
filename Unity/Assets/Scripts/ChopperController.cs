@@ -23,8 +23,11 @@ public class ChopperController : MonoBehaviour
     private void Update()
     {
         motor.Move(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        animator.SetFloat("SideSpeed", motor.rigidbody.velocity.x);
-        animator.SetFloat("ForwardSpeed", motor.rigidbody.velocity.z);
+        if (animator != null)
+        {
+            animator.SetFloat("SideSpeed", motor.rigidbody.velocity.x);
+            animator.SetFloat("ForwardSpeed", motor.rigidbody.velocity.z);
+        }
 
         RaycastHit hit = new RaycastHit();
         Ray ray = camera.ScreenPointToRay(Input.mousePosition);
