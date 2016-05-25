@@ -1,26 +1,42 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 [RequireComponent(typeof(ChopperMotor))]
 public class ChopperController : MonoBehaviour
 {
+    public LayerMask groundLayer;
+
     private ChopperMotor motor;
-    private Camera cam;
+    private new Camera camera;
+
+    public ChopperGun leftGun;
+    public ChopperGun rightGun;
 
     private void Awake()
     {
         motor = GetComponent<ChopperMotor>();
-        cam = Camera.main;
-
-        if (!cam.orthographic)
-            Debug.LogWarning("Rotating towards the mouse will only work when using an orthograpic camera");
+        camera = Camera.main;
     }
 
     private void Update()
     {
         motor.Move(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
 
-        Vector3 mouse = cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0));
-        motor.RotateTowards(mouse);
+        RaycastHit hit = new RaycastHit();
+        Ray ray = camera.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, out hit, 200f, groundLayer))
+        {
+            if (hit.point.x < motor.position.x)
+            {
+                leftGun.enabled = true;
+                rightGun.enabled = false;
+                leftGun.RotateTowards(hit.point);
+            }
+            else if (hit.point.x > motor.position.x)
+            {
+                leftGun.enabled = false;
+                rightGun.enabled = true;
+                rightGun.RotateTowards(hit.point);
+            }
+        }
     }
 }

@@ -8,7 +8,7 @@ public class WalkCircles : MonoBehaviour
 
     public void Update()
     {
-        transform.position += transform.up * forwardSpeed * Time.deltaTime;
-        transform.Rotate(transform.forward * rotateSpeed * Time.deltaTime);
+        transform.position += transform.forward * forwardSpeed * Time.deltaTime;
+        transform.Rotate(transform.up * rotateSpeed * Time.deltaTime);
     }
 }
