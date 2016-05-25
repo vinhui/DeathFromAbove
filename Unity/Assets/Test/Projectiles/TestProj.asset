@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Name: TestProj
   m_EditorClassIdentifier: 
   prefab: {fileID: 137486, guid: 733ee0e65b6f2074588f17ad27ce8b03, type: 2}
-  damage: 10
-  speed: 10
+  damage: 50
+  speed: 20
   hitLayers:
     serializedVersion: 2
     m_Bits: 4294967295
+  destroyTime: 1

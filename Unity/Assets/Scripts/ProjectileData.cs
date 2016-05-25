@@ -11,4 +11,5 @@ public class ProjectileData : ScriptableObject
     public int damage;
     public float speed;
     public LayerMask hitLayers;
+    public float destroyTime = 2f;
 }

@@ -4,6 +4,7 @@
 public class ChopperController : MonoBehaviour
 {
     public LayerMask groundLayer;
+    public Transform projector;
 
     private ChopperMotor motor;
     private new Camera camera;
@@ -25,6 +26,7 @@ public class ChopperController : MonoBehaviour
         Ray ray = camera.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(ray, out hit, 200f, groundLayer))
         {
+            projector.position = hit.point + Vector3.up * 4;
             if (hit.point.x < motor.position.x)
             {
                 leftGun.enabled = true;

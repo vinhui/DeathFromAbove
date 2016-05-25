@@ -6,11 +6,9 @@ public class Projectile : MonoBehaviour
 
     private Vector3 deltaPos;
 
-    private float destroyTime = 2f;
-
-    private void Awake()
+    private void Start()
     {
-        Destroy(gameObject, destroyTime);
+        Destroy(gameObject, projectile.destroyTime);
     }
 
     private void Update()

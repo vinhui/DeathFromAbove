@@ -8,17 +8,21 @@ public class ChopperMotor : MonoBehaviour
     private new Transform transform;
     public Vector3 position { get { return transform.position; } }
 
+    private Rigidbody rigidbody;
+
     private void Awake()
     {
         transform = base.transform;
+        rigidbody = GetComponent<Rigidbody>();
     }
 
     public void Move(float horizontal, float vertical)
     {
-        Vector3 forward = Vector3.forward * vertical * moveSpeed * Time.deltaTime;
-        Vector3 right = Vector3.right * horizontal * moveSpeed * Time.deltaTime;
+        float forward = vertical * moveSpeed * Time.deltaTime * 10;
+        float right = horizontal * moveSpeed * Time.deltaTime * 10;
 
-        transform.position += forward + right;
+        rigidbody.AddForce(right, 0, forward);
+        //transform.position += forward + right;
     }
 
     public void RotateTowards(Vector3 point)

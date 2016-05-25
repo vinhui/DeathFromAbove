@@ -84,7 +84,7 @@ NavMeshSettings:
     minRegionArea: 2
     cellSize: 0.16666667
     manualCellSize: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: bdc2c85eb3f3f06499848f0f55f7253e, type: 2}
 --- !u!1 &476828036
 GameObject:
   m_ObjectHideFlags: 0
@@ -96,10 +96,11 @@ GameObject:
   - 33: {fileID: 476828040}
   - 23: {fileID: 476828038}
   - 114: {fileID: 476828037}
-  - 114: {fileID: 476828043}
   - 65: {fileID: 476828039}
   - 54: {fileID: 476828042}
   - 96: {fileID: 476828044}
+  - 195: {fileID: 476828045}
+  - 114: {fileID: 476828043}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -210,7 +211,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!114 &476828043
 MonoBehaviour:
@@ -220,11 +221,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 476828036}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a962096c10ac51745bdff5b4fbb98fa5, type: 3}
+  m_Script: {fileID: 11500000, guid: 145c8dce70c52e643aaf3f5e81033df1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forwardSpeed: 5
-  rotateSpeed: 100
+  target: {fileID: 1639476307}
+  targetRange: 5
 --- !u!96 &476828044
 TrailRenderer:
   m_ObjectHideFlags: 0
@@ -272,6 +273,26 @@ TrailRenderer:
       rgba: 16777215
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
+--- !u!195 &476828045
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 476828036}
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: 0.5
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &485419921
 GameObject:
   m_ObjectHideFlags: 0
@@ -521,10 +542,11 @@ GameObject:
   - 33: {fileID: 923775436}
   - 23: {fileID: 923775435}
   - 114: {fileID: 923775434}
-  - 114: {fileID: 923775433}
   - 65: {fileID: 923775432}
   - 54: {fileID: 923775431}
   - 96: {fileID: 923775438}
+  - 195: {fileID: 923775439}
+  - 114: {fileID: 923775433}
   m_Layer: 0
   m_Name: Enemy (5)
   m_TagString: Untagged
@@ -545,7 +567,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!65 &923775432
 BoxCollider:
@@ -567,11 +589,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 923775430}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a962096c10ac51745bdff5b4fbb98fa5, type: 3}
+  m_Script: {fileID: 11500000, guid: 145c8dce70c52e643aaf3f5e81033df1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forwardSpeed: 5
-  rotateSpeed: 100
+  target: {fileID: 1639476307}
+  targetRange: 5
 --- !u!114 &923775434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -697,6 +719,26 @@ TrailRenderer:
       rgba: 16777215
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
+--- !u!195 &923775439
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 923775430}
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: 0.5
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &942926779
 GameObject:
   m_ObjectHideFlags: 0
@@ -708,10 +750,11 @@ GameObject:
   - 33: {fileID: 942926785}
   - 23: {fileID: 942926784}
   - 114: {fileID: 942926783}
-  - 114: {fileID: 942926782}
   - 65: {fileID: 942926781}
   - 54: {fileID: 942926780}
   - 96: {fileID: 942926787}
+  - 195: {fileID: 942926788}
+  - 114: {fileID: 942926782}
   m_Layer: 0
   m_Name: Enemy (1)
   m_TagString: Untagged
@@ -732,7 +775,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!65 &942926781
 BoxCollider:
@@ -754,11 +797,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 942926779}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a962096c10ac51745bdff5b4fbb98fa5, type: 3}
+  m_Script: {fileID: 11500000, guid: 145c8dce70c52e643aaf3f5e81033df1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forwardSpeed: 5
-  rotateSpeed: 100
+  target: {fileID: 1639476307}
+  targetRange: 5
 --- !u!114 &942926783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -884,6 +927,26 @@ TrailRenderer:
       rgba: 16777215
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
+--- !u!195 &942926788
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 942926779}
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: 0.5
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &1052494726
 GameObject:
   m_ObjectHideFlags: 0
@@ -973,6 +1036,156 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1130191626}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1237508800
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1237508804}
+  - 33: {fileID: 1237508803}
+  - 65: {fileID: 1237508802}
+  - 23: {fileID: 1237508801}
+  m_Layer: 0
+  m_Name: Cube (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!23 &1237508801
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1237508800}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!65 &1237508802
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1237508800}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1237508803
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1237508800}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1237508804
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1237508800}
+  m_LocalRotation: {x: 0, y: 0, z: -0.32338384, w: 0.9462679}
+  m_LocalPosition: {x: -7, y: 0.66, z: 10.94}
+  m_LocalScale: {x: 4.652726, y: 0.19091418, z: 4.652728}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+--- !u!1 &1260879064
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1260879068}
+  - 33: {fileID: 1260879067}
+  - 65: {fileID: 1260879066}
+  - 23: {fileID: 1260879065}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!23 &1260879065
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1260879064}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!65 &1260879066
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1260879064}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1260879067
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1260879064}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1260879068
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1260879064}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.96, y: -0.09, z: 10.792785}
+  m_LocalScale: {x: 4.652726, y: 4.652728, z: 4.652728}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
 --- !u!1 &1329427442
 GameObject:
   m_ObjectHideFlags: 0
@@ -1001,6 +1214,52 @@ Transform:
   - {fileID: 784281685}
   m_Father: {fileID: 1639476307}
   m_RootOrder: 0
+--- !u!1 &1380847897
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1380847899}
+  - 119: {fileID: 1380847898}
+  m_Layer: 0
+  m_Name: Projector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!119 &1380847898
+Projector:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1380847897}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_NearClipPlane: 0.1
+  m_FarClipPlane: 100
+  m_FieldOfView: 30
+  m_AspectRatio: 1
+  m_Orthographic: 0
+  m_OrthographicSize: 10
+  m_Material: {fileID: 2100000, guid: 0874fb64219948d48928f1cdcab095a6, type: 2}
+  m_IgnoreLayers:
+    serializedVersion: 2
+    m_Bits: 4294966783
+--- !u!4 &1380847899
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1380847897}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071067}
+  m_LocalPosition: {x: -1.55, y: 1.97, z: 8.89}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
 --- !u!1 &1418735058
 GameObject:
   m_ObjectHideFlags: 0
@@ -1012,10 +1271,11 @@ GameObject:
   - 33: {fileID: 1418735064}
   - 23: {fileID: 1418735063}
   - 114: {fileID: 1418735062}
-  - 114: {fileID: 1418735061}
   - 65: {fileID: 1418735060}
   - 54: {fileID: 1418735059}
   - 96: {fileID: 1418735066}
+  - 195: {fileID: 1418735067}
+  - 114: {fileID: 1418735061}
   m_Layer: 0
   m_Name: Enemy (3)
   m_TagString: Untagged
@@ -1036,7 +1296,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!65 &1418735060
 BoxCollider:
@@ -1058,11 +1318,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1418735058}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a962096c10ac51745bdff5b4fbb98fa5, type: 3}
+  m_Script: {fileID: 11500000, guid: 145c8dce70c52e643aaf3f5e81033df1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forwardSpeed: 5
-  rotateSpeed: 100
+  target: {fileID: 1639476307}
+  targetRange: 5
 --- !u!114 &1418735062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1188,6 +1448,26 @@ TrailRenderer:
       rgba: 16777215
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
+--- !u!195 &1418735067
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1418735058}
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: 0.5
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &1427347660
 GameObject:
   m_ObjectHideFlags: 0
@@ -1204,7 +1484,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!23 &1427347661
 MeshRenderer:
@@ -1259,7 +1539,7 @@ Transform:
   m_GameObject: {fileID: 1427347660}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 100, y: 1, z: 100}
+  m_LocalScale: {x: 5, y: 1, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -1304,7 +1584,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!108 &1628530995
 Light:
@@ -1364,6 +1644,7 @@ GameObject:
   - 114: {fileID: 1639476302}
   - 114: {fileID: 1639476301}
   - 65: {fileID: 1639476303}
+  - 54: {fileID: 1639476305}
   m_Layer: 8
   m_Name: Chopper
   m_TagString: Player
@@ -1384,7 +1665,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   groundLayer:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 512
+  projector: {fileID: 1380847899}
   leftGun: {fileID: 727934953}
   rightGun: {fileID: 485419923}
 --- !u!114 &1639476302
@@ -1398,7 +1680,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad730652ea4733b4fab6ef773ed91689, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
+  moveSpeed: 100
   rotateSpeed: 7.5
 --- !u!65 &1639476303
 BoxCollider:
@@ -1438,6 +1720,21 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
+--- !u!54 &1639476305
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1639476300}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 2
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!33 &1639476306
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1452,7 +1749,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1639476300}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.59, y: 0.609, z: 9.15}
+  m_LocalPosition: {x: -2.59, y: 3.45, z: 9.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1329427443}
@@ -1471,10 +1768,11 @@ GameObject:
   - 33: {fileID: 1768551685}
   - 23: {fileID: 1768551684}
   - 114: {fileID: 1768551683}
-  - 114: {fileID: 1768551682}
   - 65: {fileID: 1768551681}
   - 54: {fileID: 1768551680}
   - 96: {fileID: 1768551687}
+  - 195: {fileID: 1768551688}
+  - 114: {fileID: 1768551682}
   m_Layer: 0
   m_Name: Enemy (6)
   m_TagString: Untagged
@@ -1495,7 +1793,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!65 &1768551681
 BoxCollider:
@@ -1517,11 +1815,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1768551679}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a962096c10ac51745bdff5b4fbb98fa5, type: 3}
+  m_Script: {fileID: 11500000, guid: 145c8dce70c52e643aaf3f5e81033df1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forwardSpeed: 5
-  rotateSpeed: 100
+  target: {fileID: 1639476307}
+  targetRange: 5
 --- !u!114 &1768551683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1647,6 +1945,26 @@ TrailRenderer:
       rgba: 16777215
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
+--- !u!195 &1768551688
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1768551679}
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: 0.5
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &1779318295
 GameObject:
   m_ObjectHideFlags: 0
@@ -1658,10 +1976,11 @@ GameObject:
   - 33: {fileID: 1779318301}
   - 23: {fileID: 1779318300}
   - 114: {fileID: 1779318299}
-  - 114: {fileID: 1779318298}
   - 65: {fileID: 1779318297}
   - 54: {fileID: 1779318296}
   - 96: {fileID: 1779318303}
+  - 195: {fileID: 1779318304}
+  - 114: {fileID: 1779318298}
   m_Layer: 0
   m_Name: Enemy (4)
   m_TagString: Untagged
@@ -1682,7 +2001,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!65 &1779318297
 BoxCollider:
@@ -1704,11 +2023,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1779318295}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a962096c10ac51745bdff5b4fbb98fa5, type: 3}
+  m_Script: {fileID: 11500000, guid: 145c8dce70c52e643aaf3f5e81033df1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forwardSpeed: 5
-  rotateSpeed: 100
+  target: {fileID: 1639476307}
+  targetRange: 5
 --- !u!114 &1779318299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1834,6 +2153,26 @@ TrailRenderer:
       rgba: 16777215
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
+--- !u!195 &1779318304
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1779318295}
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: 0.5
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &1790658661
 GameObject:
   m_ObjectHideFlags: 0
@@ -1907,10 +2246,11 @@ GameObject:
   - 33: {fileID: 1920525753}
   - 23: {fileID: 1920525752}
   - 114: {fileID: 1920525751}
-  - 114: {fileID: 1920525750}
   - 65: {fileID: 1920525749}
   - 54: {fileID: 1920525748}
   - 96: {fileID: 1920525755}
+  - 195: {fileID: 1920525756}
+  - 114: {fileID: 1920525750}
   m_Layer: 0
   m_Name: Enemy (2)
   m_TagString: Untagged
@@ -1931,7 +2271,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!65 &1920525749
 BoxCollider:
@@ -1953,11 +2293,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1920525747}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a962096c10ac51745bdff5b4fbb98fa5, type: 3}
+  m_Script: {fileID: 11500000, guid: 145c8dce70c52e643aaf3f5e81033df1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forwardSpeed: 5
-  rotateSpeed: 100
+  target: {fileID: 1639476307}
+  targetRange: 5
 --- !u!114 &1920525751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2083,3 +2423,23 @@ TrailRenderer:
       rgba: 16777215
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
+--- !u!195 &1920525756
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1920525747}
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: 0.5
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
