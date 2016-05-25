@@ -26,6 +26,7 @@ public class ChopperController : MonoBehaviour
         Ray ray = camera.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(ray, out hit, 200f, groundLayer))
         {
+            projector.gameObject.SetActive(true);
             projector.position = hit.point + Vector3.up * 4;
             if (hit.point.x < motor.position.x)
             {
@@ -39,6 +40,10 @@ public class ChopperController : MonoBehaviour
                 rightGun.enabled = true;
                 rightGun.RotateTowards(hit.point);
             }
+        }
+        else
+        {
+            projector.gameObject.SetActive(false);
         }
     }
 }
