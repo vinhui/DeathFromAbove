@@ -8,7 +8,7 @@ public class ChopperMotor : MonoBehaviour
     private new Transform transform;
     public Vector3 position { get { return transform.position; } }
 
-    private Rigidbody rigidbody;
+    public new Rigidbody rigidbody;
 
     private void Awake()
     {

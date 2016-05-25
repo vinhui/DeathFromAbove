@@ -1,0 +1,499 @@
+fileFormatVersion: 2
+guid: 9ad7e394873d54041badc7a82f4609ff
+timeCreated: 1464180778
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Camera
+    100004: Huey
+    100006: //RootNode
+    100008: Huey_Base
+    100010: Huey_M60.L
+    100012: Huey_M60.L_end
+    100014: Huey_M60.R
+    100016: Huey_M60.R_end
+    100018: Huey_MainRotor
+    100020: Huey_MainRotor_end
+    100022: Huey_SecRotor
+    100024: Huey_SecRotor_end
+    100026: Lamp
+    100028: Lamp.001
+    100030: M60.L
+    100032: M60.R
+    100034: Point
+    100036: Point.001
+    100038: Point.002
+    100040: Point.003
+    100042: Point.004
+    100044: Sun
+    400000: Armature
+    400002: Camera
+    400004: Huey
+    400006: //RootNode
+    400008: Huey_Base
+    400010: Huey_M60.L
+    400012: Huey_M60.L_end
+    400014: Huey_M60.R
+    400016: Huey_M60.R_end
+    400018: Huey_MainRotor
+    400020: Huey_MainRotor_end
+    400022: Huey_SecRotor
+    400024: Huey_SecRotor_end
+    400026: Lamp
+    400028: Lamp.001
+    400030: M60.L
+    400032: M60.R
+    400034: Point
+    400036: Point.001
+    400038: Point.002
+    400040: Point.003
+    400042: Point.004
+    400044: Sun
+    4300000: M60.L
+    4300002: M60.R
+    4300004: Huey
+    7400000: Armature|Default
+    7400002: Armature|Fly
+    7400004: M60.L|Fly
+    7400006: M60.R|Fly
+    7400008: Huey|Fly
+    9500000: //RootNode
+    13700000: Huey
+    13700002: M60.L
+    13700004: M60.R
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|Default
+      takeName: Armature|Default
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Huey_Base
+        weight: 1
+      - path: Armature/Huey_Base/Huey_M60.L
+        weight: 1
+      - path: Armature/Huey_Base/Huey_M60.L/Huey_M60.L_end
+        weight: 1
+      - path: Armature/Huey_Base/Huey_M60.R
+        weight: 1
+      - path: Armature/Huey_Base/Huey_M60.R/Huey_M60.R_end
+        weight: 1
+      - path: Armature/Huey_Base/Huey_MainRotor
+        weight: 1
+      - path: Armature/Huey_Base/Huey_MainRotor/Huey_MainRotor_end
+        weight: 1
+      - path: Armature/Huey_Base/Huey_SecRotor
+        weight: 1
+      - path: Armature/Huey_Base/Huey_SecRotor/Huey_SecRotor_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Huey
+        weight: 1
+      - path: Lamp
+        weight: 1
+      - path: Lamp.001
+        weight: 1
+      - path: M60.L
+        weight: 1
+      - path: M60.R
+        weight: 1
+      - path: Point
+        weight: 1
+      - path: Point.001
+        weight: 1
+      - path: Point.002
+        weight: 1
+      - path: Point.003
+        weight: 1
+      - path: Point.004
+        weight: 1
+      - path: Sun
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Fly
+      takeName: Armature|Fly
+      firstFrame: 0
+      lastFrame: 474
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Huey_Base
+        weight: 1
+      - path: Armature/Huey_Base/Huey_M60.L
+        weight: 1
+      - path: Armature/Huey_Base/Huey_M60.L/Huey_M60.L_end
+        weight: 1
+      - path: Armature/Huey_Base/Huey_M60.R
+        weight: 1
+      - path: Armature/Huey_Base/Huey_M60.R/Huey_M60.R_end
+        weight: 1
+      - path: Armature/Huey_Base/Huey_MainRotor
+        weight: 1
+      - path: Armature/Huey_Base/Huey_MainRotor/Huey_MainRotor_end
+        weight: 1
+      - path: Armature/Huey_Base/Huey_SecRotor
+        weight: 1
+      - path: Armature/Huey_Base/Huey_SecRotor/Huey_SecRotor_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Huey
+        weight: 1
+      - path: Lamp
+        weight: 1
+      - path: Lamp.001
+        weight: 1
+      - path: M60.L
+        weight: 1
+      - path: M60.R
+        weight: 1
+      - path: Point
+        weight: 1
+      - path: Point.001
+        weight: 1
+      - path: Point.002
+        weight: 1
+      - path: Point.003
+        weight: 1
+      - path: Point.004
+        weight: 1
+      - path: Sun
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: M60.L|Fly
+      takeName: M60.L|Fly
+      firstFrame: 0
+      lastFrame: 474
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Huey_Base
+        weight: 1
+      - path: Armature/Huey_Base/Huey_M60.L
+        weight: 1
+      - path: Armature/Huey_Base/Huey_M60.L/Huey_M60.L_end
+        weight: 1
+      - path: Armature/Huey_Base/Huey_M60.R
+        weight: 1
+      - path: Armature/Huey_Base/Huey_M60.R/Huey_M60.R_end
+        weight: 1
+      - path: Armature/Huey_Base/Huey_MainRotor
+        weight: 1
+      - path: Armature/Huey_Base/Huey_MainRotor/Huey_MainRotor_end
+        weight: 1
+      - path: Armature/Huey_Base/Huey_SecRotor
+        weight: 1
+      - path: Armature/Huey_Base/Huey_SecRotor/Huey_SecRotor_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Huey
+        weight: 1
+      - path: Lamp
+        weight: 1
+      - path: Lamp.001
+        weight: 1
+      - path: M60.L
+        weight: 1
+      - path: M60.R
+        weight: 1
+      - path: Point
+        weight: 1
+      - path: Point.001
+        weight: 1
+      - path: Point.002
+        weight: 1
+      - path: Point.003
+        weight: 1
+      - path: Point.004
+        weight: 1
+      - path: Sun
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: M60.R|Fly
+      takeName: M60.R|Fly
+      firstFrame: 0
+      lastFrame: 474
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Huey_Base
+        weight: 1
+      - path: Armature/Huey_Base/Huey_M60.L
+        weight: 1
+      - path: Armature/Huey_Base/Huey_M60.L/Huey_M60.L_end
+        weight: 1
+      - path: Armature/Huey_Base/Huey_M60.R
+        weight: 1
+      - path: Armature/Huey_Base/Huey_M60.R/Huey_M60.R_end
+        weight: 1
+      - path: Armature/Huey_Base/Huey_MainRotor
+        weight: 1
+      - path: Armature/Huey_Base/Huey_MainRotor/Huey_MainRotor_end
+        weight: 1
+      - path: Armature/Huey_Base/Huey_SecRotor
+        weight: 1
+      - path: Armature/Huey_Base/Huey_SecRotor/Huey_SecRotor_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Huey
+        weight: 1
+      - path: Lamp
+        weight: 1
+      - path: Lamp.001
+        weight: 1
+      - path: M60.L
+        weight: 1
+      - path: M60.R
+        weight: 1
+      - path: Point
+        weight: 1
+      - path: Point.001
+        weight: 1
+      - path: Point.002
+        weight: 1
+      - path: Point.003
+        weight: 1
+      - path: Point.004
+        weight: 1
+      - path: Sun
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Huey|Fly
+      takeName: Huey|Fly
+      firstFrame: 0
+      lastFrame: 474
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Huey_Base
+        weight: 1
+      - path: Armature/Huey_Base/Huey_M60.L
+        weight: 1
+      - path: Armature/Huey_Base/Huey_M60.L/Huey_M60.L_end
+        weight: 1
+      - path: Armature/Huey_Base/Huey_M60.R
+        weight: 1
+      - path: Armature/Huey_Base/Huey_M60.R/Huey_M60.R_end
+        weight: 1
+      - path: Armature/Huey_Base/Huey_MainRotor
+        weight: 1
+      - path: Armature/Huey_Base/Huey_MainRotor/Huey_MainRotor_end
+        weight: 1
+      - path: Armature/Huey_Base/Huey_SecRotor
+        weight: 1
+      - path: Armature/Huey_Base/Huey_SecRotor/Huey_SecRotor_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Huey
+        weight: 1
+      - path: Lamp
+        weight: 1
+      - path: Lamp.001
+        weight: 1
+      - path: M60.L
+        weight: 1
+      - path: M60.R
+        weight: 1
+      - path: Point
+        weight: 1
+      - path: Point.001
+        weight: 1
+      - path: Point.002
+        weight: 1
+      - path: Point.003
+        weight: 1
+      - path: Point.004
+        weight: 1
+      - path: Sun
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
