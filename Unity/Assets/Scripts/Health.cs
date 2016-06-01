@@ -33,6 +33,7 @@ public class Health : MonoBehaviour
 
     [System.Serializable]
     public class HealthChangedEvent : UnityEvent<int> { }
+
     [System.Serializable]
     public class DiedEvent : UnityEvent { }
 }

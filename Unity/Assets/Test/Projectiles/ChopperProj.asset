@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fdbaf6e34f8bae341b6ba6591737a1bc, type: 3}
-  m_Name: TestProj
+  m_Name: ChopperProj
   m_EditorClassIdentifier: 
   prefab: {fileID: 137486, guid: 733ee0e65b6f2074588f17ad27ce8b03, type: 2}
   damage: 50
@@ -17,4 +17,4 @@ MonoBehaviour:
   hitLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  destroyTime: 1
+  destroyTime: 3
